@@ -1,5 +1,8 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from "redux";
+import { customerDataReducer } from "../components/CustomerData/modules/customerDataReducer";
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  customerData: customerDataReducer
+});
 
 export default rootReducer;

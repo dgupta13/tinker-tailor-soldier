@@ -1,9 +1,9 @@
-var express = require('express');
-var response = require('./response.json')
+var express = require("express");
+var response = require("./response.json");
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get("/", function(req, res) {
   res.send(response);
 });
 
